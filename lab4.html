@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 4</title>
+</head>
+<script>
+function F(){
+    let x,y,result;
+    x=parseInt(main_form.t_x.value);
+    y=parseInt(main_form.t_y.value);
+    if((x>0)&&(y>0)){
+        result=(x/y)-(x*Math.pow(y,2));
+    }
+    else if(((-x)+y)/2>0){
+        result=y/x;
+    }
+    else{
+        result=Math.pow(x,2);
+    }
+    main_form.t_result.value = "" + result;
+
+}
+</script>
+<body>
+<form id="main_form">
+    x<input type="text" id="t_x" value="2"><br>
+    y<input type="text" id="t_y" value="8"><br>
+    result<input type="text" id="t_result" value=""><br>
+    <input type="button" onclick="F()" value="Розрахувати">
+</form>
+</body>
+</html>

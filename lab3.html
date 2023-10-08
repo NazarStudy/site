@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання3</title>
+<script>
+function fun(a)
+{
+main_form.t_res.value = a;
+}
+function fun1(a)
+{
+main_form.t_res2.value = a;
+}
+</script>
+</head>
+<p>onClick</p>
+<body>
+<form id = "main_form">
+<input type="text" size = "100" value="onClick" onClick="fun('Відбувся клік на текстовому елементі форми');"><br>
+<input type = "text" size = "100" id = "t_res"><br>
+<p>onFocus </p>
+<input type="text" size = "100" value="onFocus" onFocus = "fun1('Текстовий елемент форми отримав фокус');"><br>
+<input type = "text" size = "100" id = "t_res2";"><br></form>
+</body>
+</html>
